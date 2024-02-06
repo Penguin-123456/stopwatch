@@ -13,7 +13,7 @@ let timeoutID;
 // 時間を表示する関数
 function displayTime() {
   const currentTime = new Date(Date.now() - startTime + stopTime);
-  const h = String(currentTime.getHours()-1).padStart(2, '0');
+  const h = String(currentTime.getHours()-9).padStart(2, '0');
   const m = String(currentTime.getMinutes()).padStart(2, '0');
   const s = String(currentTime.getSeconds()).padStart(2, '0');
   const ms = String(currentTime.getMilliseconds()).padStart(3, '0');
